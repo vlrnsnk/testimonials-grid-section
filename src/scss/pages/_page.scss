@@ -4,4 +4,10 @@
   &__content {
     padding: 4.5625rem 2.1875rem;
   }
+
+  @media (width >= 48rem) {
+    &__content {
+      padding: 5.1875rem 3.75rem 7.0625rem;
+    }
+  }
 }
