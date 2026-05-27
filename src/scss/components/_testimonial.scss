@@ -1,14 +1,47 @@
 @use '../abstracts' as *;
 
 .testimonial {
+  /* 1. Base Styles & Default Token Values */
+  --testimonial-bg: var(--color-white);
+  --testimonial-text: var(--color-grey-500);
+  --testimonial-status: var(--color-grey-400);
+  --testimonial-summary: var(--color-grey-500);
+  --testimonial-quote: var(--color-grey-400);
+
   display: flex;
   padding: var(--spacing-400);
   flex-direction: column;
   gap: var(--spacing-200);
-  background-color: var(--color-white);
+  background-color: var(--testimonial-bg);
   border-radius: var(--spacing-100);
   box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem hsl(217deg 19% 35% / 24%);
 
+  /* 2. Modifiers: Only update the tokens */
+  &--featured {
+    --testimonial-bg: var(--color-purple-500);
+    --testimonial-text: var(--color-white);
+    --testimonial-status: var(--color-purple-50);
+    --testimonial-summary: var(--color-white);
+    --testimonial-quote: var(--color-purple-50);
+  }
+
+  &--muted {
+    --testimonial-bg: var(--color-grey-500);
+    --testimonial-text: var(--color-white);
+    --testimonial-status: var(--color-grey-200);
+    --testimonial-summary: var(--color-white);
+    --testimonial-quote: var(--color-grey-100);
+  }
+
+  &--dark {
+    --testimonial-bg: var(--color-dark-blue);
+    --testimonial-text: var(--color-white);
+    --testimonial-status: var(--color-white);
+    --testimonial-summary: var(--color-grey-200);
+    --testimonial-quote: var(--color-grey-100);
+  }
+
+  /* 3. Elements: Use the tokens defined above */
   &__header {
     display: flex;
     gap: 1.0625rem;
@@ -25,81 +58,27 @@
   }
 
   &__author {
-    color: var(--color-grey-500);
+    color: var(--testimonial-text);
     margin-bottom: var(--spacing-50);
 
     @include text-preset-2;
   }
 
   &__status {
-    color: var(--color-grey-400);
+    color: var(--testimonial-status);
 
     @include text-preset-4;
   }
 
   &__summary {
-    color: var(--color-grey-500);
+    color: var(--testimonial-summary);
 
     @include text-preset-1;
   }
 
   &__quote {
-    color: var(--color-grey-400);
+    color: var(--testimonial-quote);
 
     @include text-preset-3;
-  }
-
-  &--featured {
-    background-color: var(--color-purple-500);
-  }
-
-  &--muted {
-    background-color: var(--color-grey-500);
-  }
-
-  &--dark {
-    background-color: var(--color-dark-blue);
-  }
-
-  &--featured &__author,
-  &--muted &__author,
-  &--dark &__author {
-    color: var(--color-white);
-  }
-
-  &--muted &__status {
-    color: var(--color-grey-200);
-  }
-
-  &--featured &__status {
-    color: var(--color-purple-50);
-  }
-
-  &--dark &__status {
-    color: var(--color-white);
-  }
-
-  &--featured &__summary {
-    color: var(--color-white);
-  }
-
-  &--featured &__quote {
-    color: var(--color-purple-50);
-  }
-
-  &--muted &__summary {
-    color: var(--color-white);
-  }
-
-  &--muted &__quote {
-    color: var(--color-grey-100);
-  }
-
-  &--dark &__summary {
-    color: var(--color-grey-200);
-  }
-
-  &--dark &__quote {
-    color: var(--color-grey-100);
   }
 }
