@@ -1,0 +1,105 @@
+@use '../abstracts' as *;
+
+.testimonial {
+  display: flex;
+  padding: var(--spacing-400);
+  flex-direction: column;
+  gap: var(--spacing-200);
+  background-color: var(--color-white);
+  border-radius: var(--spacing-100);
+  box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem hsl(217deg 19% 35% / 24%);
+
+  &__header {
+    display: flex;
+    gap: 1.0625rem;
+  }
+
+  &__avatar {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+
+    &--bordered {
+      border: 2px solid var(--color-purple-300);
+    }
+  }
+
+  &__author {
+    color: var(--color-grey-500);
+    margin-bottom: var(--spacing-50);
+
+    @include text-preset-2;
+  }
+
+  &__status {
+    color: var(--color-grey-400);
+
+    @include text-preset-4;
+  }
+
+  &__summary {
+    color: var(--color-grey-500);
+
+    @include text-preset-1;
+  }
+
+  &__quote {
+    color: var(--color-grey-400);
+
+    @include text-preset-3;
+  }
+
+  &--featured {
+    background-color: var(--color-purple-500);
+  }
+
+  &--muted {
+    background-color: var(--color-grey-500);
+  }
+
+  &--dark {
+    background-color: var(--color-dark-blue);
+  }
+
+  &--featured &__author,
+  &--muted &__author,
+  &--dark &__author {
+    color: var(--color-white);
+  }
+
+  &--muted &__status {
+    color: var(--color-grey-200);
+  }
+
+  &--featured &__status {
+    color: var(--color-purple-50);
+  }
+
+  &--dark &__status {
+    color: var(--color-white);
+  }
+
+  &--featured &__summary {
+    color: var(--color-white);
+  }
+
+  &--featured &__quote {
+    color: var(--color-purple-50);
+  }
+
+  &--muted &__summary {
+    color: var(--color-white);
+  }
+
+  &--muted &__quote {
+    color: var(--color-grey-100);
+  }
+
+  &--dark &__summary {
+    color: var(--color-grey-200);
+  }
+
+  &--dark &__quote {
+    color: var(--color-grey-100);
+  }
+}
