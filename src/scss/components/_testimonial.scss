@@ -105,4 +105,12 @@
       }
     }
   }
+
+  @media (width >= 90rem) {
+    &--featured {
+      &::before {
+        left: 79%;
+      }
+    }
+  }
 }
