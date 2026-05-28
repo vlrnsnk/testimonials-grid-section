@@ -3,12 +3,6 @@
 This is a solution to the [Testimonials grid section on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
 Frontend Mentor challenges help improve frontend skills by building realistic UI components.
 
-## 🚀 Using this template
-
-### 12. Add preview images
-
-Upload `./preview.png` (894xHEIGHT size) and create `public/og-image.png` (1200x630) after the project is ready for ease of sharing.
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -56,34 +50,38 @@ Users should be able to:
 
 ## Features
 
-- Responsive mobile-first layout
-- Accessible interactive states (`hover`, `focus-visible`)
-- Semantic HTML structure
-- Modular SCSS architecture using `@use`
-- CSS custom properties for design tokens
+- Fully responsive testimonial grid layout
+- Mobile-first workflow with adaptive grid transitions
+- Semantic and accessibility-focused HTML structure
+- Reusable BEM component architecture
+- SCSS modular architecture using `@use`
+- CSS custom properties for scalable design tokens
+- Fluid responsive spacing and layout constraints
+- Decorative assets implemented with pseudo-elements
 - Stylelint configuration with property ordering
-- Optimized production build with Vite
-- Automated deployment to GitHub Pages via GitHub Actions
+- Optimized Vite production build
+- Automated GitHub Pages deployment with GitHub Actions
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- SCSS (modular architecture: abstracts, base, components, layout)
-- CSS custom properties (design tokens via SCSS variables)
-- Flexbox / Grid
-- Mobile-first workflow
+- SCSS (abstracts, base, layout, components)
+- BEM naming methodology
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first responsive workflow
 - Vite
-- Stylelint (code quality + property ordering)
+- Stylelint
 - HTML validation
-- Husky (pre-commit hooks)
+- Husky pre-commit hooks
 
 ### What I learned
 
-- {{LEARNING_1}}
-- {{LEARNING_2}}
-- {{LEARNING_3}}
+- How to create responsive grid layouts that balance pixel-accurate designs with fluid behavior between breakpoints
+- How to improve component styling by using CSS custom properties as state tokens instead of duplicating modifier styles
 
 ## Setup
 
@@ -131,27 +129,55 @@ Project is built with Vite and deployed to GitHub Pages using GitHub Actions.
 
 Lighthouse score (example):
 
-- Performance: {{PERF_SCORE}}
-- Accessibility: {{ACCESSIBILITY_SCORE}}
-- Best Practices: {{BEST_PRACTICES_SCORE}}
-- SEO: {{SEO_SCORE}}
+- Performance: 100
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
 
 ## Continued Development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to continue improving my responsive layout systems, especially creating fluid layouts that behave naturally between breakpoints instead of only matching fixed design widths.
+
+I also want to further refine:
+
+- CSS Grid layout strategies for asymmetric layouts
+- scalable design token systems
+- accessibility best practices
+- responsive typography and spacing systems
+- production-level component architecture
 
 ## Useful Resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN Web Docs - CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) - Helped me better understand advanced grid positioning and spanning strategies for the testimonial layout.
+
+- [Every Layout](https://every-layout.dev/) - Great resource for learning modern responsive layout principles and constraint-based design approaches.
+
+- [BEM Methodology](https://getbem.com/) - Useful reference for organizing reusable and scalable component class structures.
 
 ## AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+I used ChatGPT, Claude, and Gemini during this project.
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+The AI tools were most helpful for:
+
+- reviewing semantic HTML structure
+- discussing responsive layout strategies
+- improving BEM naming consistency
+- debugging CSS Grid behavior
+- refining SCSS architecture and token organization
+- exploring UX/UI best practices for responsive card sizing
+
+What worked well:
+
+- architecture discussions
+- accessibility feedback
+- responsive layout problem-solving
+- alternative implementation ideas
+
+What did not work as well:
+
+- some AI suggestions conflicted with semantic or accessibility best practices
+- responsive layout recommendations sometimes prioritized exact design matching over fluid UX behavior, so manual judgment and testing were still necessary
 
 ## Author
 
@@ -163,7 +189,9 @@ Describe how you used AI tools (if any) during this project. This helps demonstr
 
 - Accessibility-focused semantic markup
 - Mobile-first responsive workflow
+- Reusable BEM component structure
 - Modular SCSS architecture using `@use`
+- CSS custom properties for scalable theming
 - Consistent styling enforced with Stylelint
 - Optimized Vite build pipeline
 - GitHub Pages deployment with GitHub Actions
