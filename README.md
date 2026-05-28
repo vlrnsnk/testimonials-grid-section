@@ -45,7 +45,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://github.com/vlrnsnk/testimonials-grid-section/issues)
+- Solution URL: [GitHub Repo](https://github.com/vlrnsnk/testimonials-grid-section)
 - Live Site URL: [Live Site](https://vlrnsnk.github.io/testimonials-grid-section)
 
 ## Features
