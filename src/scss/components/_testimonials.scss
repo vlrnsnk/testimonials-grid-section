@@ -1,12 +1,13 @@
 .testimonials {
   display: flex;
-  max-width: 69.625rem;
+  max-width: 28rem;
   margin: 0 auto;
   flex-direction: column;
   gap: var(--spacing-400);
 
   @media (width >= 48rem) {
     display: grid;
+    max-width: 46rem;
     grid-template-columns: repeat(2, 1fr);
 
     &__item {
@@ -28,7 +29,8 @@
     }
   }
 
-  @media (width >= 90rem) {
+  @media (width >= 80rem) {
+    max-width: 72rem;
     grid-template-columns: repeat(4, 1fr);
     row-gap: var(--spacing-300);
 
